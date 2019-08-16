@@ -21,4 +21,11 @@ $(document).ready(function(){
     }, 1000);
   });
 
+  $(".slider_reviews").slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+
 });

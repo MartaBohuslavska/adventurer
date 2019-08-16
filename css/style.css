@@ -32,7 +32,7 @@ a{
 }
 .background{
   height: 400px;
-  background-image: url('../image/adv.jpg');
+  background-image: url('../image/background1.jpg');
   background-size: cover;
   text-align: center;
   padding-top: 200px;
@@ -90,6 +90,7 @@ button:hover{
   margin-bottom: 50px;
 }
 .aboutUs{
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -312,4 +313,128 @@ button:hover{
 .whatWeOffer{
   margin-top: 50px;
   border-top: 1px solid #dbd8d8;
+  border-bottom: 1px solid #dbd8d8;
+}
+
+.offers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.offer{
+  max-width: 550px;
+  display: flex;
+  margin: 30px;
+  margin-bottom: 50px;
+}
+
+.icon{
+  width: 150px;
+  height: 90px;
+  background-color: #ec4848;
+  color: #fff;
+  text-align: center;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+
+.icon .fa{
+  font-size: 42px;
+  padding-top: 25px;
+}
+
+.offer-text h3{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.offer-text p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.reviews{
+  border-bottom: 1px solid #dbd8d8;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.slider_reviews{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slide_rev{
+  outline: none;
+}
+
+.customer{
+  padding: 20px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.foto{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.response h3{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.response h3 span{
+  color: #ec4848;
+  font-size: 14px;
+}
+
+.response p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.foto1{
+  background-image: url(../image/customers/foto1.jpg)
+}
+
+.foto2{
+  background-image: url(../image/customers/foto2.jpg)
+}
+
+.foto3{
+  background-image: url(../image/customers/foto3.jpg)
+}
+
+.foto4{
+  background-image: url(../image/customers/foto4.jpg)
+}
+
+.foto5{
+  background-image: url(../image/customers/foto5.jpg)
+}
+
+.foto6{
+  background-image: url(../image/customers/foto6.jpg)
+}
+
+.counter{
+  min-height: 370px;
+  background-image: url(../image/background3.jpg);
+  background-size: cover;
+  border-bottom: 1px solid #dbd8d8;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
