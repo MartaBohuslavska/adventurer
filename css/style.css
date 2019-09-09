@@ -25,6 +25,7 @@ header{
   padding-left: 220px;
   padding-right: 220px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -89,21 +90,30 @@ button:hover{
   margin-top: 50px;
   color: #141414;
 }
+
 .title h2{
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
 }
+
 .title h3{
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 50px;
 }
+
 .aboutUs{
   margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+.aboutAndProgress {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .services{
