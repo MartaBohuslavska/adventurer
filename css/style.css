@@ -48,15 +48,56 @@ header{
   background-size: cover;
   text-align: center;
   padding-top: 200px;
+  position: relative;
 }
-.background h1, .background h2 {
+
+.slides h1, .slides h2 {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 80px;
 }
-.background h2{
+
+.slides h2{
   font-size: 59px;
+}
+
+.slide2 h1 {
+  font-size: 79px;
+}
+
+.slide2 h2 {
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: 400;
+}
+
+.slide-prev, .slide-next {
+  color: #636060;
+  background-color: transparent;
+  position: absolute;
+  top: 250px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+}
+
+.slide-prev:hover, .slide-next:hover {
+  color: black;
+}
+
+.slide-prev {
+  left: 20px;
+  padding-right: 3px;
+}
+
+.slide-next {
+  right: 20px;
+  padding-left: 5px;
 }
 
 button{
@@ -245,6 +286,7 @@ button:hover{
   padding: 20px;
   margin-bottom: 40px;
 }
+
 .ourServices {
   display: flex;
   flex-wrap: wrap;
@@ -426,6 +468,10 @@ button:hover{
   font-weight: 300;
   line-height: 1.5;
   max-width: 600px;
+}
+
+.foto {
+  background-size: cover;
 }
 
 .foto1{
@@ -754,12 +800,9 @@ button:hover{
   line-height: 20px;
 }
 
-.wid-icon{
+.wid-icon i{
   padding-left: 0;
   color: black;
-}
-
-.wid-icon i{
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -769,6 +812,11 @@ button:hover{
   text-align: center;
   padding-top: 10px;
   box-sizing: border-box;
+}
+
+.wid-icon i:hover {
+  color: #fff;
+  background-color: #ec4848;
 }
 
 .features h4, .tags h4, .posts h4{
@@ -794,7 +842,8 @@ button:hover{
   text-align: justify;
 }
 
-.tags span{
+.tags span a{
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 5px 6px;
@@ -805,13 +854,13 @@ button:hover{
 .widgets .posts{
   width: 340px;
 }
-.posts img{
+.posts a img{
   width: 60px;
   height: 60px;
   margin: 5px;
 }
 
-.posts img:nth-of-type(4n+1){
+.posts a:nth-of-type(4n+1){
   margin-left: 20px;
 }
 
@@ -839,4 +888,52 @@ span.red{
 
 .icon-footer a:hover{
   color: #ec4848;
+}
+
+@media (max-width: 680px) {
+
+  .navbar{
+    min-height: 80px;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .services {
+    width: 340px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .progressBar {
+    width: 360px;
+  }
+
+  .myProgress {
+    margin-left: 0;
+  }
+
+  .background{
+    padding-top: 10px;
+  }
+
+  .slide-prev, .slide-next {
+    position: absolute;
+    top: 300px;
+  }
+
+  button{
+    margin-top: 0;
+  }
+
+  .foto{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+ .nav {
+   display: none;
+ }
 }

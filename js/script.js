@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+  $(".header-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+
+  $('.slide-prev').on('click', function(){
+    $('.header-slider').slick('slickPrev');
+  });
+
+  $('.slide-next').on('click', function(){
+      $('.header-slider').slick('slickNext');
+  });
+
   $('.item-collapse h2').on('click', function() {
     $(this).parents('.item-collapse').siblings().removeClass('active');
     $(this).parents('.item-collapse').addClass('active');
@@ -65,5 +80,29 @@ $(document).ready(function(){
     $('body, html').animate({scrollTop: bl_top}, 700);
   });
   
-  870
+  $('#search').on('click', function() {
+    var search = prompt("What are you looking for?");
+    if (search) {
+      return false;
+    }
+    return false;
+  });
+
+  function ValidMail(e) {
+    var reg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/i;
+    var mail = $('[type="email"]').val();
+    var valid = reg.test(mail);
+    if (valid) {
+        alert("Thank you for your subscription!");
+    } else if (!valid) {
+        alert("Please, enter the correct email!");
+    }
+    return false;
+  }
+
+  $('#subscribe').on('click', function() {
+      console.log(ValidMail());
+      $('[type="email"]').val(' ');
+  });
+
 });
